@@ -14,5 +14,9 @@ add_subdirectory(third-party/googletest-release-1.10.0)
 
 include_directories(${getst_SOURCE_DIR} ${gtest_SOURCE_DIR}/include)
 
-add_executable(learn_boost JsonTest.cpp)
+add_executable(learn_boost
+        JsonTest.cpp
+        ArrayTest.cpp)
+
 target_link_libraries(learn_boost gtest gtest_main)
+
