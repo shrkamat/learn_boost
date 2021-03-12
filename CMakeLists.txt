@@ -16,5 +16,7 @@ include_directories(${getst_SOURCE_DIR} ${gtest_SOURCE_DIR}/include)
 
 add_executable(learn_boost
         JsonTest.cpp
-        ArrayTest.cpp)
+        ArrayTest.cpp
+        AsioTest.cpp)
+
 target_link_libraries(learn_boost gtest gtest_main)
